@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://kit.fontawesome.com/6d72e2d990.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav id="home">
+				<h2 class="header-logo">Drk<span>Gaphar</span></h2>
+				<ul >
+					<li><a href="./#header">HOME</a></li>
+					<li><a href="./#about-me">ABOUT ME</a></li>
+					<li><a href="./#services">SERVICES</a></li>
+					<li><a href="./#projects">PROJECTS</a></li>
+					<li><a href="./contact.html">CONTACT ME</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars"></i></a></li>
+				</ul>
+			</nav>
+			<div class="header-text">
+				<div class="header-content">
+					<h1>Hello, I'm <span>Abiodun</span> Shittu</h1>
+					<p>A Full-Stack Developer building the Frontend and <br>Backend of Websites and Web Applications</p>
+					<div class="extra">
+						<a href="./#projects" class="btn">PROJECTS</a>
+					</div>
+				</div>
+				<div class="socials">
+        <div class="social">
+          <a href="https://linkedin.com/in/shittu-abiodun/" class="social-icon-link"  target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="DrkGaphar Linkedin Profile" class="social-icon">
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://twitter.com/DrkGaphar" class="social-icon-link"  target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg" alt="DrkGaphar Twitter Profile" class="social-icon">
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/drkgaphar/" class="social-icon-link social-icon-link--bd-none"  target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png" alt="DrkGaphar Instagram Profile" class="social-icon">
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/abiodun-shittu/" class="social-icon-link"  target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="DrkGaphar Github Profile" class="social-icon">
+          </a>
+        </div>
+
+        <div class="social">
+          <a href="https://abiodun-shittu.hashnode.dev/" class="social-icon-link"  target="_blank">
+            <img src="https://www.pngrepo.com/png/330611/512/hashnode.png" alt="DrkGaphar Hashnode Profile" class="social-icon">
+          </a>
+        </div>
+      			</div>
+
+			</div>
+	</header>
+	<main>
+		<!-- ABOUT SECTION -->
+		<section id="about-me">
+			<div class="container">
+				<div class="row">
+					<div class="about-img">
+							<img src="./img/abiodun.png" alt="Abiodun's Picture" />
+						</div>
+						<div class="about-text">
+							<h1 class="text-title">About <span>Me</span></h1>
+							<p>
+								I am a Full-Stack Developer Intern with
+								experience in HTML, CSS, JavaScript for the
+								Front-End, and NodeJs and PostgreSQL for the
+								Back-End. I'm presently developing an Express
+								Todo App using Node.js and PostgreSQL on a
+								Restful API as my first Back-End project. I
+								strive hard to provide the finest outcome
+								possible in any assignment I take on since I
+								have a creative mindset.
+							</p>
+							<div class="others">
+								<p
+									class="drop-tabs active"
+									onclick="view('hobbies')"
+								>
+									Hobbies
+								</p>
+								<p class="drop-tabs" onclick="view('priority')">
+									Priority
+								</p>
+								<p class="drop-tabs" onclick="view('skills')">
+									Skills
+								</p>
+							</div>
+							<div id="hobbies" class="others-contents clicked">
+								<ul>
+									<li><p class="format">BasketBall</p></li>
+									<li><p>Solving Problems</p></li>
+									<li>
+										<p class="format">Sharing Knowledge Gained</p>
+									</li>
+								</ul>
+							</div>
+							<div id="priority" class="others-contents">
+								<ul>
+									<li>
+										<p>Full-Stack Developer</p>
+									</li>
+									<li>
+										<p class="format">Materials Scientist and Engineer</p>
+									</li>
+								</ul>
+							</div>
+							<div id="skills" class="others-contents">
+		
+								<div class="skill format">HTML</div>
+								<div class="skill">CSS</div>
+								<div class="skill format">JavaScript</div>
+								<div class="skill">GIT</div>
+								<div class="skill format">Github</div>
+								<div class="skill">Linux Terminal</div>
+								<div class="skill format">NodeJs</div>
+								<div class="skill">SQL</div>
+    
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- SERVICES SECTION -->
+			<section id="services">
+				<div class="container">
+					<h1 class="text-title">services</h1>
+					<div class="services-list">
+						<div>
+							<i class="fa-solid fa-code"></i>
+							<h2>Web Development</h2>
+						</div>
+						<div>
+							<i class="fa-brands fa-node"></i>
+							<h2>Back-End Development</h2>
+						</div>
+						<div>
+							<i class="fa-solid fa-mobile"></i>
+							<h2>Mobile App Development</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROJECTS SECTION -->
+			<section id="projects">
+				<div class="container">
+					<h1 class="text-title">Projects</h1>
+					<div class="project-list">
+						<div class="project">
+							<img src="./img/img-1.png" alt="Memory-Game">
+							<div class="layer">
+								<h3>Memory Game</h3>
+								<p>This is a simple card memory game that test how well you remember the location of cards viewed</p>
+								<a href="#"><i class="fa-brands fa-github"></i> Repo</a><br>
+								<a href="#"><i class="fa-solid fa-game-board-simple"></i> Play Game</a>
+							</div>
+						</div>
+						<div class="project">
+							<img src="./img/img-2.png" alt="Todo-App">
+							<div class="layer">
+								<h3>Todo-App</h3>
+								<p>This is a Todo Application Built on a Restful Api Using NodeJs and PostgreSQL</p>
+								<a href="#"><i class="fa-brands fa-github"></i> Repo</a>
+							</div>
+						</div>
+						<div class="project">
+							<img src="./img/img-3.png" alt="Netflix-Clone">
+							<div class="layer">
+								<h3>Netflix Clone</h3>
+								<p>This is my first project to clone Netflix Homepage Using HTML and CSS</p>
+								<a href="#"><i class="fa-brands fa-github"></i> Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT SECTION -->
+			<section id="contact">
+				<div class="container">
+						<h1 class="text-title">Contact Me</h1>
+						<p>Feel free to reach out to me by clicking on the button below</p>
+						<div class="extra">
+					<a href="./contact.html" class="btn">REACH ME</a>
+
+					</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<div class="copyright">
+				<p>Copyright ©️ DrkGaphar. Created by Abiodun Shittu</p>
+			</div>
+		</footer>
+
+		<script>
+			let tabs = document.getElementsByClassName("drop-tabs");
+			let contents = document.getElementsByClassName("others-contents");
+			const view = (name) => {
+				for (tab of tabs) {
+					tab.classList.remove("active");
+				}
+				for (content of contents) {
+					content.classList.remove("clicked");
+				}
+				event.currentTarget.classList.add("active");
+				document.getElementById(name).classList.add("clicked")
+			};
+		</script>
+	</body>
+</html>
