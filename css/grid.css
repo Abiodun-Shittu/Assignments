@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: rgb(4, 10, 38);
+}
+
+.container {
+	height: 80vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	margin: 10%;
+}
+
+.top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 10px;
+}
+
+.top-left {
+	height: 250px;
+	background: orangered;
+}
+
+.top-right {
+	height: 50px;
+	background: yellow;
+}
+.bottom-left {
+	height: 50px;
+	background: green;
+}
+
+.bottom-right {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.bottom-right-up {
+	height: 20px;
+	background: rgb(0, 115, 255);
+}
+
+.bottom-right-down {
+	height: 20px;
+	background: rgb(142, 50, 161);
+}
