@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-left">
+			<div class="logo">
+				<h1>DrkGaphar</h1>
+				<h3>Find Everything You're <br>Looking For here...</h3>
+				<img src="./img/Abstraction.png" alt="">
+			</div>
+		</div>
+		<div class="col-right">
+			<h1>Create your account</h1>
+			<p>you need an account to get started</p>
+			<form>
+				<div class="name">
+					<input type="text" name="Last name" placeholder="Last name" required>
+					<input type="text" name="First name" placeholder="First name" required>
+				</div>
+				<div class="details">
+					<input type="date" name="DOB" placeholder="Date of birth" required>
+					<input type="number" name="Phone number" placeholder="Phone number" required>
+				</div>
+				<div class="sex">
+					<select name="gender">
+						<option value="none" selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">other</option>
+					</select>
+					<label for="favcolor">favorite color:</label>
+					<input type="color" name="fav-color" value="#ff0000">
+				</div>
+				<input type="email" name="email" placeholder="Email address">
+				<div class="pass">
+					<input type="password" id="pass" placeholder="Create password" required>
+					<input type="button" value="Show" onclick="show()">
+				</div>
+				<input type="checkbox" name="agreement"><span>I agree with DrkGaphar Terms & Conditions</span>
+				<div>
+					<p>Already registered? <a href="./login.html">Log in</a></p>
+					<button type="submit"><a href="./success.html"></a>Create account</button>
+				</div>
+			</form>
+			<div class="terms">
+				<p>Terms & Conditions | Privacy Policy</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function show() {
+			let pass = document.getElementById("pass");
+			if (pass.type === "password") {
+				pass.type = "text";
+			} else {
+				pass.type = "password";
+			}
+		}
+	</script>
+</body>
+</html>
